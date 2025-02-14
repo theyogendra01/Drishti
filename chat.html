@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chat Bot</title>
     <link rel="stylesheet" href="chat.css">
 </head>
+
 <body>
     <div class="container">
-    <div class="chat-container">
-        
-        <div class="chat-box" id="chat-box">
-            <!-- Chat messages will appear here -->
-        </div>
-        <div class="input-container">
-            <input type="text" id="chat-input" placeholder="Type a message...">
-            <button id="send-button">Send</button>
-            <input type="file" id="image-upload" accept="image/*">
+        <div class="chat-container">
+
+            <div class="chat-box" id="chat-box">
+                <!-- Chat messages will appear here -->
+            </div>
+            <div id="image-preview-container"></div> <!-- Image preview container -->
+            <div class="input-container">
+                <input type="text" id="chat-input" placeholder="Type a message...">
+                <button id="send-button">Send</button>
+                <label for="image-upload" class="image-upload-label">📷</label>
+                <input type="file" id="image-upload" accept="image/*">
+            </div>
         </div>
     </div>
-</div>
     <script src="chat.js"></script>
 </body>
+
 </html>
